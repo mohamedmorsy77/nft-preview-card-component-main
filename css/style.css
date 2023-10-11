@@ -1,0 +1,156 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Very-dark-blue-main-BG);
+  font-size: 18px;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+section {
+  background-color: var(--Very-dark-blue-card-BG);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 15px;
+  color: var(--White);
+  width: 400px;
+}
+.image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.image div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: 99%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+
+}
+.image div:hover {
+  opacity: 1;
+  cursor: pointer;
+
+}
+.image div img {
+  width: 100px;
+}
+section .image > img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+section h3 {
+  margin-top: 30px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+section h3:hover {
+  color: var(--Cyan);
+}
+section > p {
+  color: var(--Soft-blue);
+  margin-top: 20px;
+  line-height: 1.5;
+}
+section .clock {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--Very-dark-blue-line);
+}
+section .clock img {
+  width: 10px;
+}
+section .clock img {
+  width: 10px;
+}
+section .clock div:nth-of-type(1) {
+  color: var(--Cyan);
+}
+section .clock > div {
+  display: flex;
+  gap: 5px;
+}
+section .clock > div:not(img) {
+  color: var(--Soft-blue);
+}
+section .info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+section .info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid var(--White);
+}
+section a {
+  color: var(--White);
+}
+section a:hover {
+  color: var(--Cyan);
+}
+section .info p span {
+  color: var(--Soft-blue);
+  margin-right: 5px;
+}
